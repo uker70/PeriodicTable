@@ -1,0 +1,110 @@
+<div class="gridRow" *ngIf="done === true">
+    <div class="gridColumn">
+        <div *ngFor="let data of getSpecificItems(1, 2)">
+            <div *ngIf="data != null" [ngClass]="data.constructor.name">
+                <p>{{data.atomicNumber}}</p>
+                <h3>{{data.symbol}}</h3>
+                <p class="smallText">{{data.name}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="gridColumn">
+        <div *ngFor="let data of getSpecificItems(3, 10)">
+            <div *ngIf="data != null" [ngClass]="data.constructor.name">
+                <p>{{data.atomicNumber}}</p>
+                <h3>{{data.symbol}}</h3>
+                <p class="smallText">{{data.name}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="gridColumn">
+        <div *ngFor="let data of getSpecificItems(11, 18)">
+            <div *ngIf="data != null" [ngClass]="data.constructor.name">
+                <p>{{data.atomicNumber}}</p>
+                <h3>{{data.symbol}}</h3>
+                <p class="smallText">{{data.name}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="gridColumn">
+        <div *ngFor="let data of getSpecificItems(19, 36)">
+            <div [ngClass]="data.constructor.name">
+                <p>{{data.atomicNumber}}</p>
+                <h3>{{data.symbol}}</h3>
+                <p class="smallText">{{data.name}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="gridColumn">
+        <div *ngFor="let data of getSpecificItems(37, 54)">
+            <div [ngClass]="data.constructor.name">
+                <p>{{data.atomicNumber}}</p>
+                <h3>{{data.symbol}}</h3>
+                <p class="smallText">{{data.name}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="gridColumn">
+        <div *ngFor="let data of getSpecificItems(55, 56)">
+            <div [ngClass]="data.constructor.name">
+                <p>{{data.atomicNumber}}</p>
+                <h3>{{data.symbol}}</h3>
+                <p class="smallText">{{data.name}}</p>
+            </div>
+        </div>
+        <div class="LanthanidesMetal box">
+            <div class="LanthanidesMetal">
+                <p class="marginTop">57-71</p>
+            </div>
+        </div>
+        <div *ngFor="let data of getSpecificItems(72, 86)">
+            <div [ngClass]="data.constructor.name">
+                <p>{{data.atomicNumber}}</p>
+                <h3>{{data.symbol}}</h3>
+                <p class="smallText">{{data.name}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="gridColumn">
+        <div *ngFor="let data of getSpecificItems(87, 88)">
+            <div [ngClass]="data.constructor.name">
+                <p>{{data.atomicNumber}}</p>
+                <h3>{{data.symbol}}</h3>
+                <p class="smallText">{{data.name}}</p>
+            </div>
+        </div>
+        <div class="ActinidesMetal box">
+            <div class="ActinidesMetal">
+                <p class="marginTop">89-103</p>
+            </div>
+        </div>
+        <div *ngFor="let data of getSpecificItems(104, 118)">
+            <div [ngClass]="data.constructor.name">
+                <p>{{data.atomicNumber}}</p>
+                <h3>{{data.symbol}}</h3>
+                <p class="smallText">{{data.name}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="gridUnderRow">
+    <div class="gridUnderColumn">
+        <div *ngFor="let data of getSpecificItems(57, 71)">
+            <div [ngClass]="data.constructor.name">
+                <p>{{data.atomicNumber}}</p>
+                <h3>{{data.symbol}}</h3>
+                <p class="smallText">{{data.name}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="gridUnderColumn">
+        <div *ngFor="let data of getSpecificItems(89, 103)">
+            <div [ngClass]="data.constructor.name">
+                <p>{{data.atomicNumber}}</p>
+                <h3>{{data.symbol}}</h3>
+                <p class="smallText">{{data.name}}</p>
+            </div>
+        </div>
+    </div>
+</div>
